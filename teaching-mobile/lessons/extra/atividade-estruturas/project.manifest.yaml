@@ -1,0 +1,30 @@
+project:
+  id: ifma-estruturas-lab
+  language: typescript
+  mode: progressive-lab
+
+policies:
+  network: deny-by-default
+  filesystem:
+    root: .
+    atomic_writes: true
+  deterministic: true
+  deterministic_seed: IFMA-ESTRUTURAS-LAB
+  execution:
+    shell: allowlist
+    commands: [npm, node, npx, tsc]
+
+phases: [F01, F02, F03, F04, F05, F06, F07, F08]
+
+artifacts:
+  student_package: atividade-estruturas-aluno
+  teacher_package: atividade-estruturas-professor
+
+gates:
+  - build
+  - typecheck
+  - starter-run
+  - solutions-1000-xp
+  - no-answer-leak
+  - deterministic-grading
+  - anti-hardcode

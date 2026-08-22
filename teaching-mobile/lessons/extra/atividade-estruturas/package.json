@@ -1,0 +1,20 @@
+{
+  "name": "ifma-estruturas-lab-aluno",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laboratório progressivo autocorretivo de estruturas de dados — IFMA",
+  "scripts": {
+    "doctor": "node scripts/doctor.cjs",
+    "check": "node grader/runner.cjs",
+    "status": "node grader/status.cjs",
+    "dica": "node grader/hint.cjs",
+    "typecheck": "node scripts/typecheck.cjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  }
+}

@@ -1,0 +1,44 @@
+# Dependências
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / cache
+dist/
+build/
+web-build/
+.cache/
+.metro-health-check*
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Projeto-base temporário
+lessons/2/_expo-base/
+
+# ZIP temporário da atividade
+lessons/2/eda-project.zip

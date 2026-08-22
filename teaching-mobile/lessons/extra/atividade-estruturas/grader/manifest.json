@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "projectId": "ifma-estruturas-lab",
+  "deterministicSeed": "IFMA-ESTRUTURAS-LAB",
+  "totalXp": 1000,
+  "phases": [
+    {
+      "id": "F01",
+      "title": "Valores, tipos e TypeScript",
+      "shortTitle": "TIPOS",
+      "xp": 75,
+      "file": "src/fases/f01-tipos.ts",
+      "slides": "3–8"
+    },
+    {
+      "id": "F02",
+      "title": "Array: vários valores relacionados",
+      "shortTitle": "ARRAY",
+      "xp": 150,
+      "file": "src/fases/f02-array.ts",
+      "slides": "9–20"
+    },
+    {
+      "id": "F03",
+      "title": "Array, vetor e lista encadeada",
+      "shortTitle": "LIGAÇÕES",
+      "xp": 125,
+      "file": "src/fases/f03-lista.ts",
+      "slides": "21–33"
+    },
+    {
+      "id": "F04",
+      "title": "Matrizes",
+      "shortTitle": "MATRIZES",
+      "xp": 150,
+      "file": "src/fases/f04-matriz.ts",
+      "slides": "34–37"
+    },
+    {
+      "id": "F05",
+      "title": "Set: valores únicos",
+      "shortTitle": "SET",
+      "xp": 100,
+      "file": "src/fases/f05-set.ts",
+      "slides": "38–42"
+    },
+    {
+      "id": "F06",
+      "title": "Map: chave → valor",
+      "shortTitle": "MAP",
+      "xp": 125,
+      "file": "src/fases/f06-map.ts",
+      "slides": "43–45 e 48"
+    },
+    {
+      "id": "F07",
+      "title": "Object e Record",
+      "shortTitle": "OBJETOS",
+      "xp": 100,
+      "file": "src/fases/f07-object-record.ts",
+      "slides": "46–47"
+    },
+    {
+      "id": "F08",
+      "title": "Missão final: App da Turma",
+      "shortTitle": "APP DA TURMA",
+      "xp": 175,
+      "file": "src/fases/f08-app-da-turma.ts",
+      "slides": "49"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "F01-A01",
+      "phase": "F01",
+      "title": "Nome como string",
+      "xp": 25,
+      "concept": "string e anotação explícita",
+      "cases": 1,
+      "file": "src/fases/f01-tipos.ts",
+      "activityFile": "atividades/f01-tipos.md",
+      "slides": "3–8",
+      "feedback": "O nome ainda não representa o texto solicitado."
+    },
+    {
+      "id": "F01-A02",
+      "phase": "F01",
+      "title": "Idade como number",
+      "xp": 25,
+      "concept": "number e anotação explícita",
+      "cases": 1,
+      "file": "src/fases/f01-tipos.ts",
+      "activityFile": "atividades/f01-tipos.md",
+      "slides": "3–8",
+      "feedback": "A idade ainda não representa a quantidade solicitada."
+    },
+    {
+      "id": "F01-A03",
+      "phase": "F01",
+      "title": "Entrega como boolean",
+      "xp": 25,
+      "concept": "boolean e anotação explícita",
+      "cases": 1,
+      "file": "src/fases/f01-tipos.ts",
+      "activityFile": "atividades/f01-tipos.md",
+      "slides": "3–8",
+      "feedback": "A decisão ainda não indica que a atividade foi entregue."
+    },
+    {
+      "id": "F02-A01",
+      "phase": "F02",
+      "title": "Criar Array",
+      "xp": 25,
+      "concept": "Array de strings",
+      "cases": 1,
+      "file": "src/fases/f02-array.ts",
+      "activityFile": "atividades/f02-array.md",
+      "slides": "9–20",
+      "feedback": "A coleção ainda não contém os três estudantes na ordem solicitada."
+    },
+    {
+      "id": "F02-A02",
+      "phase": "F02",
+      "title": "Acessar posição",
+      "xp": 25,
+      "concept": "acesso por índice",
+      "cases": 5,
+      "file": "src/fases/f02-array.ts",
+      "activityFile": "atividades/f02-array.md",
+      "slides": "9–20",
+      "feedback": "O retorno ainda não corresponde ao índice solicitado."
+    },
+    {
+      "id": "F02-A03",
+      "phase": "F02",
+      "title": "Lembrar o índice zero",
+      "xp": 25,
+      "concept": "primeiro elemento e índice 0",
+      "cases": 4,
+      "file": "src/fases/f02-array.ts",
+      "activityFile": "atividades/f02-array.md",
+      "slides": "9–20",
+      "feedback": "O retorno ainda não é o primeiro elemento da coleção."
+    },
+    {
+      "id": "F02-A04",
+      "phase": "F02",
+      "title": "Alterar posição",
+      "xp": 25,
+      "concept": "atribuição por índice",
+      "cases": 4,
+      "file": "src/fases/f02-array.ts",
+      "activityFile": "atividades/f02-array.md",
+      "slides": "9–20",
+      "feedback": "A posição indicada não foi alterada corretamente no Array recebido."
+    },
+    {
+      "id": "F02-A05",
+      "phase": "F02",
+      "title": "Contar elementos",
+      "xp": 25,
+      "concept": "propriedade length",
+      "cases": 5,
+      "file": "src/fases/f02-array.ts",
+      "activityFile": "atividades/f02-array.md",
+      "slides": "9–20",
+      "feedback": "A quantidade devolvida não acompanha o tamanho da coleção."
+    },
+    {
+      "id": "F02-A06",
+      "phase": "F02",
+      "title": "Adicionar no fim",
+      "xp": 25,
+      "concept": "método push",
+      "cases": 4,
+      "file": "src/fases/f02-array.ts",
+      "activityFile": "atividades/f02-array.md",
+      "slides": "9–20",
+      "feedback": "O estudante ainda não foi acrescentado ao fim da coleção recebida."
+    },
+    {
+      "id": "F03-A01",
+      "phase": "F03",
+      "title": "Conectar dois nós",
+      "xp": 25,
+      "concept": "nó e referência para o próximo",
+      "cases": 4,
+      "file": "src/fases/f03-lista.ts",
+      "activityFile": "atividades/f03-lista.md",
+      "slides": "21–33",
+      "feedback": "A referência do primeiro nó ainda não aponta para o segundo."
+    },
+    {
+      "id": "F03-A02",
+      "phase": "F03",
+      "title": "Formar uma cadeia",
+      "xp": 25,
+      "concept": "cadeia de referências",
+      "cases": 3,
+      "file": "src/fases/f03-lista.ts",
+      "activityFile": "atividades/f03-lista.md",
+      "slides": "21–33",
+      "feedback": "Os três nós ainda não formam a cadeia solicitada."
+    },
+    {
+      "id": "F03-A03",
+      "phase": "F03",
+      "title": "Inserir no início",
+      "xp": 25,
+      "concept": "religar referências",
+      "cases": 4,
+      "file": "src/fases/f03-lista.ts",
+      "activityFile": "atividades/f03-lista.md",
+      "slides": "21–33",
+      "feedback": "O novo nó ainda não se tornou o início preservando a cadeia anterior."
+    },
+    {
+      "id": "F03-A04",
+      "phase": "F03",
+      "title": "Acesso direto",
+      "xp": 25,
+      "concept": "vetor/Array e índice",
+      "cases": 5,
+      "file": "src/fases/f03-lista.ts",
+      "activityFile": "atividades/f03-lista.md",
+      "slides": "21–33",
+      "feedback": "O acesso direto ainda não devolve a posição solicitada."
+    },
+    {
+      "id": "F03-A05",
+      "phase": "F03",
+      "title": "Percorrer até o quarto",
+      "xp": 25,
+      "concept": "percurso em lista encadeada",
+      "cases": 4,
+      "file": "src/fases/f03-lista.ts",
+      "activityFile": "atividades/f03-lista.md",
+      "slides": "21–33",
+      "feedback": "O percurso ainda não chega ao quarto nó da cadeia."
+    },
+    {
+      "id": "F04-A01",
+      "phase": "F04",
+      "title": "Criar matriz",
+      "xp": 30,
+      "concept": "Array de Arrays e number[][]",
+      "cases": 1,
+      "file": "src/fases/f04-matriz.ts",
+      "activityFile": "atividades/f04-matriz.md",
+      "slides": "34–37",
+      "feedback": "A matriz ainda não representa as três linhas e os dois bimestres solicitados."
+    },
+    {
+      "id": "F04-A02",
+      "phase": "F04",
+      "title": "Acessar célula",
+      "xp": 30,
+      "concept": "matriz[linha][coluna]",
+      "cases": 6,
+      "file": "src/fases/f04-matriz.ts",
+      "activityFile": "atividades/f04-matriz.md",
+      "slides": "34–37",
+      "feedback": "A célula devolvida não corresponde à linha e coluna solicitadas."
+    },
+    {
+      "id": "F04-A03",
+      "phase": "F04",
+      "title": "Obter linha",
+      "xp": 30,
+      "concept": "linha de matriz",
+      "cases": 4,
+      "file": "src/fases/f04-matriz.ts",
+      "activityFile": "atividades/f04-matriz.md",
+      "slides": "34–37",
+      "feedback": "O retorno ainda não corresponde à linha completa solicitada."
+    },
+    {
+      "id": "F04-A04",
+      "phase": "F04",
+      "title": "Alterar célula",
+      "xp": 30,
+      "concept": "atribuição em matriz",
+      "cases": 5,
+      "file": "src/fases/f04-matriz.ts",
+      "activityFile": "atividades/f04-matriz.md",
+      "slides": "34–37",
+      "feedback": "A nota não foi registrada na coordenada solicitada."
+    },
+    {
+      "id": "F04-A05",
+      "phase": "F04",
+      "title": "Ler dimensões",
+      "xp": 30,
+      "concept": "quantidade de linhas e colunas",
+      "cases": 4,
+      "file": "src/fases/f04-matriz.ts",
+      "activityFile": "atividades/f04-matriz.md",
+      "slides": "34–37",
+      "feedback": "As dimensões ainda não correspondem às linhas e colunas da matriz."
+    },
+    {
+      "id": "F05-A01",
+      "phase": "F05",
+      "title": "Criar Set",
+      "xp": 25,
+      "concept": "Set de strings",
+      "cases": 1,
+      "file": "src/fases/f05-set.ts",
+      "activityFile": "atividades/f05-set.md",
+      "slides": "38–42",
+      "feedback": "A coleção ainda não contém exatamente as três tecnologias únicas."
+    },
+    {
+      "id": "F05-A02",
+      "phase": "F05",
+      "title": "Adicionar valor",
+      "xp": 25,
+      "concept": "Set.add",
+      "cases": 5,
+      "file": "src/fases/f05-set.ts",
+      "activityFile": "atividades/f05-set.md",
+      "slides": "38–42",
+      "feedback": "O valor ainda não foi adicionado corretamente à coleção recebida."
+    },
+    {
+      "id": "F05-A03",
+      "phase": "F05",
+      "title": "Contar únicos",
+      "xp": 25,
+      "concept": "Set.size",
+      "cases": 5,
+      "file": "src/fases/f05-set.ts",
+      "activityFile": "atividades/f05-set.md",
+      "slides": "38–42",
+      "feedback": "A quantidade não corresponde ao tamanho atual do Set."
+    },
+    {
+      "id": "F05-A04",
+      "phase": "F05",
+      "title": "Remover duplicatas",
+      "xp": 25,
+      "concept": "conversão Array → Set",
+      "cases": 6,
+      "file": "src/fases/f05-set.ts",
+      "activityFile": "atividades/f05-set.md",
+      "slides": "38–42",
+      "feedback": "A saída ainda não preserva todos os valores sem repetições."
+    },
+    {
+      "id": "F06-A01",
+      "phase": "F06",
+      "title": "Criar Map",
+      "xp": 25,
+      "concept": "Map<string, number>",
+      "cases": 1,
+      "file": "src/fases/f06-map.ts",
+      "activityFile": "atividades/f06-map.md",
+      "slides": "43–45 e 48",
+      "feedback": "O mapa ainda não representa as três associações solicitadas."
+    },
+    {
+      "id": "F06-A02",
+      "phase": "F06",
+      "title": "Registrar nota",
+      "xp": 25,
+      "concept": "Map.set",
+      "cases": 5,
+      "file": "src/fases/f06-map.ts",
+      "activityFile": "atividades/f06-map.md",
+      "slides": "43–45 e 48",
+      "feedback": "A chave recebida ainda não está associada ao valor informado."
+    },
+    {
+      "id": "F06-A03",
+      "phase": "F06",
+      "title": "Consultar nota",
+      "xp": 25,
+      "concept": "Map.get",
+      "cases": 6,
+      "file": "src/fases/f06-map.ts",
+      "activityFile": "atividades/f06-map.md",
+      "slides": "43–45 e 48",
+      "feedback": "A consulta ainda não devolve o valor associado à chave solicitada."
+    },
+    {
+      "id": "F06-A04",
+      "phase": "F06",
+      "title": "Atualizar nota",
+      "xp": 25,
+      "concept": "Map.set atualiza chave existente",
+      "cases": 5,
+      "file": "src/fases/f06-map.ts",
+      "activityFile": "atividades/f06-map.md",
+      "slides": "43–45 e 48",
+      "feedback": "A chave existente ainda não foi atualizada para o novo valor."
+    },
+    {
+      "id": "F06-A05",
+      "phase": "F06",
+      "title": "Mapear três notas",
+      "xp": 25,
+      "concept": "construção de pares chave/valor",
+      "cases": 4,
+      "file": "src/fases/f06-map.ts",
+      "activityFile": "atividades/f06-map.md",
+      "slides": "43–45 e 48",
+      "feedback": "Nem todos os três pares recebidos foram preservados no Map."
+    },
+    {
+      "id": "F07-A01",
+      "phase": "F07",
+      "title": "Construir aluno",
+      "xp": 25,
+      "concept": "Object como entidade",
+      "cases": 5,
+      "file": "src/fases/f07-object-record.ts",
+      "activityFile": "atividades/f07-object-record.md",
+      "slides": "46–47",
+      "feedback": "O objeto ainda não preserva todas as informações do aluno recebido."
+    },
+    {
+      "id": "F07-A02",
+      "phase": "F07",
+      "title": "Consultar propriedade",
+      "xp": 25,
+      "concept": "acesso a propriedade",
+      "cases": 5,
+      "file": "src/fases/f07-object-record.ts",
+      "activityFile": "atividades/f07-object-record.md",
+      "slides": "46–47",
+      "feedback": "O retorno ainda não corresponde ao nome guardado no objeto."
+    },
+    {
+      "id": "F07-A03",
+      "phase": "F07",
+      "title": "Criar Record",
+      "xp": 25,
+      "concept": "Record<string, number>",
+      "cases": 5,
+      "file": "src/fases/f07-object-record.ts",
+      "activityFile": "atividades/f07-object-record.md",
+      "slides": "46–47",
+      "feedback": "O Record ainda não preserva os dois pares nome/nota."
+    },
+    {
+      "id": "F07-A04",
+      "phase": "F07",
+      "title": "Consultar Record",
+      "xp": 25,
+      "concept": "chave dinâmica em Record",
+      "cases": 6,
+      "file": "src/fases/f07-object-record.ts",
+      "activityFile": "atividades/f07-object-record.md",
+      "slides": "46–47",
+      "feedback": "A consulta ainda não devolve o valor guardado na chave solicitada."
+    },
+    {
+      "id": "F08-A01",
+      "phase": "F08",
+      "title": "Criar estado vazio",
+      "xp": 35,
+      "concept": "integração de estruturas",
+      "cases": 3,
+      "file": "src/fases/f08-app-da-turma.ts",
+      "activityFile": "atividades/f08-app-da-turma.md",
+      "slides": "49",
+      "feedback": "O estado inicial ainda não contém todas as estruturas vazias esperadas."
+    },
+    {
+      "id": "F08-A02",
+      "phase": "F08",
+      "title": "Adicionar estudante",
+      "xp": 35,
+      "concept": "Object + Array + matriz",
+      "cases": 4,
+      "file": "src/fases/f08-app-da-turma.ts",
+      "activityFile": "atividades/f08-app-da-turma.md",
+      "slides": "49",
+      "feedback": "Aluno e linha de notas ainda não foram adicionados juntos ao estado."
+    },
+    {
+      "id": "F08-A03",
+      "phase": "F08",
+      "title": "Registrar tecnologia",
+      "xp": 35,
+      "concept": "Set dentro do estado",
+      "cases": 5,
+      "file": "src/fases/f08-app-da-turma.ts",
+      "activityFile": "atividades/f08-app-da-turma.md",
+      "slides": "49",
+      "feedback": "A tecnologia ainda não foi registrada como valor único no estado."
+    },
+    {
+      "id": "F08-A04",
+      "phase": "F08",
+      "title": "Registrar média",
+      "xp": 35,
+      "concept": "Map dentro do estado",
+      "cases": 5,
+      "file": "src/fases/f08-app-da-turma.ts",
+      "activityFile": "atividades/f08-app-da-turma.md",
+      "slides": "49",
+      "feedback": "A associação nome/média ainda não foi registrada no estado."
+    },
+    {
+      "id": "F08-A05",
+      "phase": "F08",
+      "title": "Montar painel",
+      "xp": 35,
+      "concept": "Array + matriz + Map + Object",
+      "cases": 6,
+      "file": "src/fases/f08-app-da-turma.ts",
+      "activityFile": "atividades/f08-app-da-turma.md",
+      "slides": "49",
+      "feedback": "O painel ainda não combina corretamente aluno, célula da matriz e média por chave."
+    }
+  ],
+  "badges": [
+    {
+      "xp": 75,
+      "icon": "🏅",
+      "title": "Tipos sob Controle"
+    },
+    {
+      "xp": 225,
+      "icon": "🏅",
+      "title": "Índice Zero"
+    },
+    {
+      "xp": 350,
+      "icon": "🏅",
+      "title": "Ligações e Posições"
+    },
+    {
+      "xp": 500,
+      "icon": "🏅",
+      "title": "Mestre da Matriz"
+    },
+    {
+      "xp": 600,
+      "icon": "🏅",
+      "title": "Sem Duplicatas"
+    },
+    {
+      "xp": 725,
+      "icon": "🏅",
+      "title": "Chave → Valor"
+    },
+    {
+      "xp": 825,
+      "icon": "🏅",
+      "title": "Modelador de Dados"
+    },
+    {
+      "xp": 1000,
+      "icon": "🏆",
+      "title": "App da Turma Concluído"
+    }
+  ]
+}
