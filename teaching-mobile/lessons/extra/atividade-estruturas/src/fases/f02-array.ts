@@ -3,7 +3,6 @@
  * Edite somente os TODOs deste arquivo.
  * Verificação: npm run check
  */
-import { TODO } from "../lib/todo";
 
 // TODO F02-A01
 export function criarAlunos(): string[] {

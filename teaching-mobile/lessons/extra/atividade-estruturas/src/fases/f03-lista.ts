@@ -3,7 +3,6 @@
  * A infraestrutura do nó já está pronta. Edite somente os TODOs.
  * Verificação: npm run check
  */
-import { TODO } from "../lib/todo";
 
 export type No = {
   valor: string;
