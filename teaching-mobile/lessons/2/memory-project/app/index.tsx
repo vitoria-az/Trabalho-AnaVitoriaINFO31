@@ -8,8 +8,8 @@ import {
   View,
 } from "react-native";
 
-// TODO 1: troque string por "Relato" | "Lugar" | "Celebração".
-type CategoriaMemoria = string;
+// TODO 1: Restringindo a união de literais para categorias válidas
+type CategoriaMemoria = "Relato" | "Lugar" | "Celebração";
 
 interface Memoria {
   id: number;
@@ -17,10 +17,11 @@ interface Memoria {
   comunidade: string;
   categoria: CategoriaMemoria;
   resumo: string;
-  // TODO 2: acrescente ano como propriedade number opcional.
+  // TODO 2: Adicionando propriedade 'ano' como opcional
+  ano?: number;
 }
 
-// Dados inteiramente fictícios para uso didático.
+// Dados inteiramente fictícios (inclui o Desafio Opcional: 4ª memória)
 const MEMORIAS: Memoria[] = [
   {
     id: 1,
@@ -28,6 +29,7 @@ const MEMORIAS: Memoria[] = [
     comunidade: "Comunidade Fictícia A",
     categoria: "Relato",
     resumo: "Um relato simulado sobre caminhos usados entre casas e roçados.",
+    ano: 1985,
   },
   {
     id: 2,
@@ -35,6 +37,7 @@ const MEMORIAS: Memoria[] = [
     comunidade: "Comunidade Fictícia B",
     categoria: "Lugar",
     resumo: "Uma descrição simulada de um espaço de encontro comunitário.",
+    // Sem ano (propriedade opcional)
   },
   {
     id: 3,
@@ -42,8 +45,25 @@ const MEMORIAS: Memoria[] = [
     comunidade: "Comunidade Fictícia C",
     categoria: "Celebração",
     resumo: "Um registro simulado sobre partilha, música e memória coletiva.",
+    ano: 2012,
+  },
+  {
+    id: 4,
+    titulo: "Encontro dos saberes",
+    comunidade: "Comunidade Fictícia D",
+    categoria: "Celebração",
+    resumo: "Uma reunião anual para troca de experiências e rituais comunitários.",
+    ano: 2019,
   },
 ];
+
+// TODO 3: Função tipada para formatação da legenda
+function criarLegenda(memoria: Memoria): string {
+  if (memoria.ano) {
+    return `${memoria.categoria} · ${memoria.comunidade} · ${memoria.ano}`;
+  }
+  return `${memoria.categoria} · ${memoria.comunidade}`;
+}
 
 type CartaoMemoriaProps = {
   memoria: Memoria;
@@ -62,10 +82,8 @@ function CartaoMemoria({
       style={[styles.cartao, selecionada && styles.cartaoSelecionado]}
     >
       <Text style={styles.tituloCartao}>{memoria.titulo}</Text>
-      {/* TODO 3: crie criarLegenda(memoria: Memoria): string e use aqui. */}
-      <Text style={styles.legenda}>
-        {memoria.categoria} · {memoria.comunidade}
-      </Text>
+      {/* TODO 3: Usando a função criarLegenda */}
+      <Text style={styles.legenda}>{criarLegenda(memoria)}</Text>
       <Text style={styles.acao}>
         {selecionada ? "Toque para fechar" : "Toque para conhecer"}
       </Text>
@@ -80,9 +98,9 @@ export default function Index() {
     (memoria) => memoria.id === idSelecionada,
   );
 
+  // TODO 4: Alterna a seleção (remove se clicar na mesma, altera se for outra)
   function alternarSelecao(id: number): void {
-    // TODO 4: se o mesmo id já estiver selecionado, grave null.
-    setIdSelecionada(id);
+    setIdSelecionada((prevId) => (prevId === id ? null : id));
   }
 
   return (
@@ -114,7 +132,12 @@ export default function Index() {
             <Text style={styles.textoDetalhes}>
               {memoriaSelecionada.resumo}
             </Text>
-            {/* TODO 5: mostre o ano somente quando ele existir. */}
+            {/* TODO 5: Exibição condicional do ano apenas se informado */}
+            {memoriaSelecionada.ano !== undefined && (
+              <Text style={styles.anoDetalhes}>
+                Ano do registro: {memoriaSelecionada.ano}
+              </Text>
+            )}
           </View>
         ) : (
           <Text style={styles.vazio}>Nenhuma memória selecionada.</Text>
@@ -210,6 +233,12 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     marginTop: 8,
   },
+  anoDetalhes: {
+    color: "#DCFCE7",
+    fontSize: 14,
+    fontWeight: "600",
+    marginTop: 10,
+  },
   vazio: {
     color: "#64748B",
     fontSize: 15,
@@ -224,4 +253,3 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
 });
-
