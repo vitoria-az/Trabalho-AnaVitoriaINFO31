@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "apexcharts": "^3.44.0",
-    "highcharts": "^11.2.0"
-  },
-  "scripts": {
-    "dev": "apachectl start"
-  }
-}

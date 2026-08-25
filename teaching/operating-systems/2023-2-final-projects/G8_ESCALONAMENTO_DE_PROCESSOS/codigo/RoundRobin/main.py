@@ -1,2 +1,0 @@
-import Menu
-Menu.menu()
