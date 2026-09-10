@@ -16,11 +16,3 @@ import AppFooter from './components/AppFooter.vue'
   </div>
 </template>
 
-<style scoped>
-.page-shell {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 24px 16px;
-  font-family: Arial, sans-serif;
-}
-</style>

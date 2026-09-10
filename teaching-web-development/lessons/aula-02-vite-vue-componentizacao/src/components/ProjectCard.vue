@@ -10,8 +10,8 @@
 <style scoped>
 .project-card {
   padding: 24px;
-  background: #f0f4f8;
-  border-left: 8px solid #1B365D;
+  background: #f8fafc;
+  border-left: 8px solid #2563eb;
   border-radius: 8px;
 }
 
@@ -28,7 +28,7 @@
 
 .label {
   margin: 0 0 8px;
-  color: #2563EB;
+  color: #1d4ed8;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -39,7 +39,7 @@ button {
   padding: 12px 18px;
   color: #ffffff;
   font-weight: 700;
-  background: #1B365D;
+  background: #2563eb;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
@@ -47,11 +47,11 @@ button {
 }
 
 button:hover {
-  background: #0f2342;
+  background: #1d4ed8;
 }
 
 button:focus-visible {
-  outline: 3px solid #2563EB;
+  outline: 3px solid #60a5fa;
   outline-offset: 3px;
 }
 </style>

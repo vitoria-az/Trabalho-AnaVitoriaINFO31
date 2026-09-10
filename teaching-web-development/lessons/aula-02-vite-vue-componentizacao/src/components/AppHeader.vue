@@ -14,18 +14,18 @@
 
 .app-header h1 {
   margin: 0;
-  color: #2c3e50;
+  color: #111b26;
 }
 
 .app-header > p:last-child {
   margin: 12px 0 0;
   line-height: 1.6;
-  color: #555555;
+  color: #897676;
 }
 
 .eyebrow {
   margin: 0 0 8px;
-  color: #4682B4;
+  color: #7946b4;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;

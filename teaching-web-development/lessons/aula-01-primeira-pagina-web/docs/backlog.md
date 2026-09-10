@@ -12,13 +12,13 @@
 
 **Como** visitante, **quero** clicar em um botão de apoio **para** indicar que a proposta é relevante para mim.
 
-**Critério observável:** O botão "Tenho interesse" altera visualmente seu estado ao ser pressionado (mudança de cor ou efeito de clique) e fica temporariamente desativado para evitar cliques duplos.
+**Critério observável:** O botão "Marcar interesse" altera visualmente seu estado ao ser pressionado e fica desativado após o registro para evitar cliques duplos.
 
 ## P3 — Receber retorno da ação
 
 **Como** visitante, **quero** receber uma confirmação imediata após a ação **para** saber que meu apoio foi registrado.
 
-**Critério observável:** O texto da interface altera instantaneamente para "Obrigado pelo apoio!" acompanhado de um ícone de check ou uma transição de cor suave na tela.
+**Critério observável:** O texto da interface altera instantaneamente para "Obrigado pelo apoio! Seu interesse foi registrado." acompanhado de um ícone de check e de uma mudança de cor no botão.
 
 ## Ideias para depois
 

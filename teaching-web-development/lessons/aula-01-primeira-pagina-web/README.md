@@ -32,7 +32,7 @@ Ao abrir o projeto por um servidor HTTP local, a página deve apresentar:
 - o título `Projeto Integrador Web`;
 - o estado inicial `Ideia em validação.`;
 - o botão `Marcar interesse`;
-- a mensagem `Interesse registrado.` após o clique.
+- a mensagem `Obrigado pelo apoio! Seu interesse foi registrado.` após o clique.
 
 ## Estrutura
 

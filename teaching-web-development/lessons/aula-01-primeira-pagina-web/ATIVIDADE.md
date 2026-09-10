@@ -34,7 +34,7 @@ Preencha individualmente [`docs/mapa-pre-requisitos.md`](./docs/mapa-pre-requisi
    python -m http.server 8000
    ```
 
-2. Anote a rota escolhida: `[ ] npm/npx` ou `[ ] Python`.
+2. Anote a rota escolhida: `[x] npm/npx` ou `[ ] Python`.
 3. Abra a URL informada no terminal.
 4. Não abra o HTML por duplo clique: a página deve usar `http://`.
 5. Use o painel **Network** para localizar os três recursos do projeto.

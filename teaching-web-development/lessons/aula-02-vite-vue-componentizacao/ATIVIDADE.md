@@ -160,9 +160,9 @@ git log -1 --oneline
 
 ### Evidência da rota Python
 
-- [x] build de referência servido a partir de `dist/`;
-- [x] diferença entre código-fonte e build explicada;
-- [x] alteração no fonte validada posteriormente por uma máquina com npm ou apresentada ao professor para validação.
+- [ ] build de referência servido a partir de `dist/`;
+- [ ] diferença entre código-fonte e build explicada;
+- [ ] alteração no fonte validada posteriormente por uma máquina com npm ou apresentada ao professor para validação.
 
 ## 9. Ticket de saída
 
