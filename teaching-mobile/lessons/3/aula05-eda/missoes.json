@@ -1,0 +1,41 @@
+{
+  "versao": "2.0.0",
+  "campanha": "Operação Interface Resgatada",
+  "trilha": "EDA / Permanência",
+  "total_xp": 100,
+  "missoes": [
+    {
+      "id": "M1",
+      "nome": "Scanner de Barreiras",
+      "tempo": "8 min",
+      "xp": 15,
+      "tag": "DIAGNOSTICAR",
+      "goal": "Observar antes de editar. Registrar pelo menos 3 barreiras reais na interface que já funciona."
+    },
+    {
+      "id": "M2",
+      "nome": "Laboratório de Layout",
+      "tempo": "18 min",
+      "xp": 30,
+      "tag": "ORGANIZAR",
+      "goal": "Usar Image local, View, StyleSheet e Flexbox para melhorar leitura e distribuição sem mexer na regra de negócio."
+    },
+    {
+      "id": "M3",
+      "nome": "Toque que Responde",
+      "tempo": "21 min",
+      "xp": 35,
+      "tag": "OPERAR",
+      "goal": "Dar feedback perceptível ao toque, tamanho adequado ao controle acionável e semântica acessível à ação."
+    },
+    {
+      "id": "BOSS",
+      "nome": "Boss Fight — Teste Cego",
+      "tempo": "12 min",
+      "xp": 20,
+      "tag": "VALIDAR",
+      "goal": "Outra dupla usa a interface por 60 segundos sem explicação; vocês registram uma barreira e corrigem uma delas."
+    }
+  ],
+  "regra": "XP formativo; dicas não descontam; evidência obrigatória."
+}
